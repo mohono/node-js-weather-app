@@ -25,15 +25,7 @@ app.get('', (req, res) => {
 
 
 
-
-
-
-
-
-
-
-
-
+//blame
 app.get('/products', (req, res) => {
     if(!req.query.address){
         res.send({
