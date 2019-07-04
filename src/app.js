@@ -23,9 +23,6 @@ app.get('', (req, res) => {
     })
 })
 
-
-
-//blame
 app.get('/products', (req, res) => {
     if(!req.query.address){
         res.send({
@@ -43,16 +40,17 @@ app.get('/products', (req, res) => {
 
 
 
-
-
-
-
-
-
-
+let port = process.env.PORT || 3000                                                               
 
 app.listen(3000, () => {
     console.log('server is up on port 3000')
 })
+
+
+
+
+
+
+
 
 //nodemon app.js -e hbs
